@@ -222,6 +222,21 @@ header ul li {
     padding-top: 20px;
 }
 
+.submitbutton {
+    padding: 10px;
+    border: 5px solid aquamarine;
+    border-radius: 30px;
+    width: 150px;
+    font-size: 20px;
+    color: mintcream;
+    background-color: dodgerblue;
+}
+
+.submitbutton:hover {
+    background-color: #167ee2;
+    cursor: pointer;
+}
+
 /*==========================
     END OF CONTACT FORM
 ============================*/
