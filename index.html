@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="og:description" content="seekeroftacos is a developer with knowledge in HTML, CSS, and JavaScript.">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>seekeroftacos</title>
+	</head>
+	<body>
+	    <header>
+	        <div class="head">
+	            <h1 id="change">seekeroftacos</h1>
+	            <div class="headcontent">
+	            <ul>
+	                <li><a href="https://www.twitter.com/FlagsGames" target="_blank"><img  class="twitter" id="tweetimg" onMouseOver="twitterimg()" onMouseOut="twitterimgback()" src="./images/twittercirc.png" width="120px"></a></li>
+                    <li><button class="button" onClick="change()" id="click" onMouseOver="changeit()" onMouseOut="changeitback()"></button></li>
+	                <li><a href="https://www.github.com/seekeroftacos" target="_blank"><img class="github" id="gitimg" onMouseOut="gitimgback()" onMouseOver="gitimg()" src="./images/github.png" width="100px"></a></li>
+	            </ul>
+                </div>
+	        </div>
+	    </header>
+	    <section class="plangs">
+	        <div class="container">
+                <!--Explains what the next part of the page is-->
+                    <h1 id="prolanghead">Programming Languages</h1>
+                <!--Explains what the next part of the page is-->
+	            <div class="html">
+	                <h1>HTML</h1>
+	                <h4>Hyper Text Markup Language</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque magni optio. Nesciunt eligendi voluptatibus maiores odio cupiditate atque asperiores neque officiis quaerat, nobis, ab, quos dolores ut expedita error!</p>
+	            </div>
+	            
+	            <div class="css">
+	                <h1>CSS</h1>
+	                <h4>Cascading Style Sheets</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque magni optio. Nesciunt eligendi voluptatibus maiores odio cupiditate atque asperiores neque officiis quaerat, nobis, ab, quos dolores ut expedita error!</p>
+	            </div>
+	            
+	            <div class="js">
+	                <h1>JS</h1>
+	                <h4>JavaScript</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque magni optio. Nesciunt eligendi voluptatibus maiores odio cupiditate atque asperiores neque officiis quaerat, nobis, ab, quos dolores ut expedita error!</p>
+	            </div>
+	            
+	            <div class="rayyic">
+	                <h1>Rayyic</h1>
+	                <h4>Developments</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque fuga eligendi iusto, minima unde dignissimos provident asperiores repellat doloribus praesentium sed ipsum, laborum in hic, vitae. Repudiandae eum, velit labore.</p>
+	            </div>
+	            
+	            <div class="botdev">
+	                <h1>Discord</h1>
+	                <h4>Bot Development</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint excepturi vero harum unde consectetur, itaque pariatur, doloribus molestiae numquam odit iusto magnam quas autem iure hic quibusdam impedit distinctio dignissimos.</p>
+	            </div>
+	            <div class="webdev">
+	                <h1>Web Design</h1>
+	                <h4>&amp; Development</h4>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, deleniti modi neque sequi, rerum magnam omnis itaque ea doloribus veniam totam. Omnis corporis atque ipsam non obcaecati dolore fuga aliquam.</p>
+	            </div>
+	        </div>
+	    </section>
+	    <footer>
+	        Discord: <span class="discord">seekeroftacos#8722</span>&nbsp;&nbsp;&#124;&nbsp;&nbsp;GitHub: <a href="https://www.github.com/seekeroftacos"><span class="gitlink">seekeroftacos</span></a>
+	    </footer>
+	    <script>
+            //Changes the "seekeroftacos" header to multiple different outputs when the button is pressed.
+            function change(){
+                let outputs = ["seekeroftacos", "seekeroftacos - Web Developer", "seekeroftacos - Discord Bot Developer", "seekeroftacos - CSS", "seekeroftacos - HTML", "seekeroftacos - JS"];
+                
+                let realoutput = Math.floor((Math.random() * outputs.length));
+                
+                document.getElementById("change").innerHTML = outputs[realoutput];
+            }
+            //When hovered over, the button value is changed to "Click Me"
+            function changeit(){
+                document.getElementById("click").innerHTML = "Click Me";
+                
+                document.getElementById("tweetimg").src = "./images/twitter.png";
+                
+                document.getElementById("gitimg").src = "./images/githubcol.png";
+                
+                document.getElementById("gitimg").style.paddingBottom = "20px";
+                
+                document.getElementById("tweetimg").style.paddingRight = "20px";
+            }
+            //When the mouse leaves the box, the button returns to a blank value
+            function changeitback(){
+                document.getElementById("click").innerHTML = "";
+                
+                document.getElementById("tweetimg").src = "./images/twittercirc.png";
+                
+                document.getElementById("gitimg").src = "./images/github.png";
+            }
+            //When you hover over the github logo, it will switch to a colored version
+            function gitimg(){
+                document.getElementById("gitimg").src = "./images/githubcol.png";
+            }
+            //When the mouse leaves the github logo, it will change back to the full black version
+            function gitimgback(){
+                document.getElementById("gitimg").src = "./images/github.png";
+            }
+            //When you hover over the twitter logo, it will switch to a regular version
+            function twitterimg(){
+                document.getElementById("tweetimg").src = "./images/twitter.png";
+            }
+            //When the mouse leaves the twitter logo, it will change back to the circle version
+            function twitterimgback(){
+                document.getElementById("tweetimg").src = "./images/twittercirc.png";
+            }
+        </script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

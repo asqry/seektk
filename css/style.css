@@ -1,0 +1,191 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: auto;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+#tweetimg {
+    padding-bottom: 5px;
+}
+
+.github {
+    padding-bottom: 5px;
+}
+
+.github:hover {
+    padding-bottom: 25px;
+}
+
+.head {
+    background-color: darkslategray;
+    color: mintcream;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px solid aquamarine;
+}
+
+.headcontent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    font-size: 20px;
+    background-color: darkslategray;
+    border: 7px solid aquamarine;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    color: mintcream;
+    font-weight: bold;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-bottom: none;
+    background-color: dodgerblue;
+    width: 200px;
+    height: 50px;
+}
+
+/*All programming language boxes*/
+#prolanghead {
+    color: mintcream;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container {
+    background-color: dodgerblue;
+    height: 675px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 6px solid mintcream;
+}
+
+/*Programming language box 1 - HTML*/
+.html {
+    width: 33%;
+    height: 250px;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    border-right: 1px solid dodgerblue;
+    color: mintcream;
+    text-align: center;
+    display: inline-block;
+}
+
+/*Programming language box 2 - CSS*/
+.css {
+    width: 33%;
+    height: 250px;
+    color: mintcream;
+    text-align: center;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    margin-top: 0;
+    border-left: 1px solid dodgerblue;
+    display: inline-block;
+}
+
+/*Programming language box 3 - JS*/
+.js {
+    width: 32%;
+    height: 250px;
+    color: mintcream;
+    text-align: center;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    margin-top: 0;
+    border-left: 1px solid dodgerblue;
+    display: inline-block;
+}
+
+/*===================================
+        NEW LINE OF BOXES
+=====================================*/
+
+.rayyic {
+    width: 33%;
+    height: 250px;
+    color: mintcream;
+    text-align: center;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 1px solid dodgerblue;
+    display: inline-block;
+}
+
+.botdev {
+    width: 33%;
+    height: 250px;
+    color: mintcream;
+    text-align: center;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 1px solid dodgerblue;
+    display: inline-block;
+}
+
+.webdev {
+    width: 33%;
+    height: 250px;
+    color: mintcream;
+    text-align: center;
+    border-top: 5px solid mintcream;
+    border-bottom: 5px solid mintcream;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 1px solid dodgerblue;
+    display: inline-block;
+}
+/*End of lanuages*/
+
+footer {
+    color: mintcream;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer .discord {
+    color: #7289da;
+    font-weight: bold;
+}
+
+footer .gitlink {
+    color: mintcream;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .gitlink:hover {
+    text-decoration: underline;
+}
+
