@@ -3,7 +3,7 @@
 	<head>
 		<meta name="og:description" content="seekeroftacos is a developer with knowledge in HTML, CSS, and JavaScript.">
 		<link rel="stylesheet" href="./css/style.css">
-		<title>seekeroftacos</title>
+		<title>Contact seekeroftacos</title>
 	</head>
 	<body>
 	    <header>
@@ -13,7 +13,7 @@
 	            <ul>
 	                <li><a href="https://www.twitter.com/FlagsGames" target="_blank"><img  class="twitter" id="tweetimg" onMouseOver="twitterimg()" onMouseOut="twitterimgback()" src="./images/twittercirc.png" width="120px"></a></li>
                 <!--First button HOME BUTTON-->
-                    <li><a href="http://www.seekeroftacos.tk/index.html"><button class="button" id="homebutton" onMouseOver="home()" onMouseOut="homeclear()"></button></a></li>
+                    <li><a href="http://www.seekeroftacos.tk"><button class="button" id="homebutton" onMouseOver="home()" onMouseOut="homeclear()"></button></a></li>
                 <!--First button-->
                    
                 <!--Second button - Click me button-->
@@ -21,14 +21,28 @@
                 <!--Second button - Click me button-->
                    
                 <!--Third button CONTACT BUTTON-->
-                    <li><button class="button" id="contactbutton" onMouseOver="contact()" onMouseOut="contactclear()"></button></li>
+                    <li><a href="http://www.seekeroftacos.tk/contact.html"><button class="button" id="contactbutton" onMouseOver="contact()" onMouseOut="contactclear()"></button></a></li>
                 <!--Third button-->
 	                <li><a href="https://www.github.com/seekeroftacos" target="_blank"><img class="github" id="gitimg" onMouseOut="gitimgback()" onMouseOver="gitimg()" src="./images/github.png" width="100px"></a></li>
 	            </ul>
                 </div>
 	        </div>
 	    </header>
-	    
+	    <section id="contactme">
+	        <div class="container">
+            <!--CONTACT FORM-->
+	            <form class="contactform">
+              <label class="label">Name</label><br><br>
+              <input class="name" type="text"><br><br>
+              <label class="label">Email</label><br><br>
+              <input class="email" type="email"><br><br>
+              <label class="label">Message</label><br><br>
+              <textarea class="message"></textarea><br><br>
+            <button class="submitbutton" type="submit">Send</button>
+          </form>
+	       <!--CONTACT FORM-->
+	        </div>
+	    </section>
 	    <footer>
 	        Discord: <span class="discord">seekeroftacos#8722</span>&nbsp;&nbsp;&#124;GitHub: <a href="https://www.github.com/seekeroftacos"><span class="gitlink">seekeroftacos</span></a>
 	    </footer>
