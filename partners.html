@@ -19,6 +19,10 @@
                 <!--Second button - Click me button-->
                     <li><button class="button" onClick="change()" id="click" onMouseOver="changeit()" onMouseOut="changeitback()"></button></li>
                 <!--Second button - Click me button-->
+			    
+		<!--Partner button-->
+                    <li><a href="http://www.seekeroftacos.tk/partners"><button class="button" id="partnerbutton" onMouseOver="partner()" onMouseOut="partnerclear()"></button></a></li>
+                <!--Partner button-->
                    
                 <!--Third button CONTACT BUTTON-->
                     <li><a href="http://www.seekeroftacos.tk/contact.html"><button class="button" id="contactbutton" onMouseOver="contact()" onMouseOut="contactclear()"></button></a></li>
@@ -99,6 +103,15 @@
             function contactclear(){
                 document.getElementById("contactbutton").innerHTML = "";
             }
+		    
+	//PARTNER BUTTON HOVER
+		    function partner(){
+			document.getElementById("partnerbutton").innerHTML = "Partners";    
+		    }
+		    
+		    function partnerclear(){
+			document.getElementById("partnerbutton").innerHTML = "";    
+		    }
         </script>
 	</body>
 </html>
