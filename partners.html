@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="og:description" content="seekeroftacos is a developer with knowledge in HTML, CSS, and JavaScript.">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>seekeroftacos</title>
+	</head>
+	<body>
+	    <header>
+	        <div class="head">
+	            <h1 id="change">seekeroftacos</h1>
+	            <div class="headcontent">
+	            <ul>
+	                <li><a href="https://www.twitter.com/FlagsGames" target="_blank"><img  class="twitter" id="tweetimg" onMouseOver="twitterimg()" onMouseOut="imgback()" src="./images/twittercirc.png" width="120px"></a></li>
+                <!--First button HOME BUTTON-->
+                    <li><a href="http://www.seekeroftacos.tk"><button class="button" id="homebutton" onMouseOver="home()" onMouseOut="homeclear()"></button></a></li>
+                <!--First button-->
+                   
+                <!--Second button - Click me button-->
+                    <li><button class="button" onClick="change()" id="click" onMouseOver="changeit()" onMouseOut="changeitback()"></button></li>
+                <!--Second button - Click me button-->
+			    
+	<!--Partner button-->
+                    <li><a href="http://www.seekeroftacos.tk/partners"><button class="button" id="partnerbutton" onMouseOver="partner()" onMouseOut="partnerclear()"></button></a></li>
+                <!--Partner button-->
+                   
+                <!--Third button CONTACT BUTTON-->
+                    <li><a href="http://www.seekeroftacos.tk/contact.html"><button class="button" id="contactbutton" onMouseOver="contact()" onMouseOut="contactclear()"></button></a></li>
+                <!--Third button-->
+	                <li><a href="https://www.github.com/seekeroftacos" target="_blank"><img class="github" id="gitimg" onMouseOut="gitimgback()" onMouseOver="gitimg()" src="./images/github.png" width="100px"></a></li>
+	            </ul>
+                </div>
+	        </div>
+	    </header>
+		<section class="partners">
+			<div class="lovefinding">
+				<img src="./images/lovefind.jpg" width="150px">
+				<h1>Love Finding</h1>
+                <h4>Reason for Partner: <span class="highlight">Developer</span></h4>
+				<p>Love Finding is a chill and matchmaking discord server created this year that is growing extremely fast.</p><br>
+				<a class="joinlink" href="" target="_blank">Join</a><br><br><br>
+				<a class="websitelink" href="http://www.lovefinding.ml" target="_blank">Website</a>
+			</div>
+			
+			<div class="rayyicdev">
+				<img src="./images/rayyic.jpg" width="150px">
+				<h1>Rayyic Developments</h1>
+                <h4>Reason for Partner: <span class="highlight">Head Developer/Teacher</span></h4>
+				<p>Rayyic Developments is a discord-based programming school that teaches a wide variety of languages like HTML, CSS, and JS.</p><br>
+				<a class="joinlink" href="" target="_blank">Join</a><br><br><br>
+				<a class="websitelink" href="https://www.rayyic.xyz" target="_blank">Website</a>
+			</div>
+			
+			<div class="shodan">
+			    <img id="shodanpic" src="./images/shodan.png" width="150px" onMouseOver="red()" onMouseOut="orig()">
+			    <h1 id="shodantext">SHODAN</h1>
+                <h4>Reason for Partner: <span class="highlight">Server Partner</span></h4>
+			    <p>SHODAN is a bot coded with dualcord technology, making it 100% unique. SHODAN offers a very wide range of commands.</p><br>
+			    <a class="joinlink" href="https://discordapp.com/oauth2/authorize?client_id=378909180666314754&scope=bot&permissions=8" target="_blank">Add Bot</a><br><br><br>
+				<a class="websitelink" href="https://shodanbot.com" target="_blank">Website</a>
+			</div>
+			
+			<div class="lymiore">
+            <img src="./images/lymiore.jpg" width="150px">
+			    <h1>Lymiore Land</h1>
+			    <h4>Reason for Partner: <span class="highlight">Senior Moderator</span></h4>
+			    <p>Lymiore Land is a discord server for a soon to be Minecraft server. It is just starting up, but it is growing fast.</p><br>
+			    <a href="" class="joinlink">Join</a><br><br><br>
+			    <a href="http://www.lymiore.ml" class="websitelink">Website</a>
+			</div>
+			<div class="pvo">
+            <img src="./images/pvo.jpg" width="150px">
+			    <h1>Positive Vibes Only</h1>
+			    <h4>Reason for Partner: <span class="highlight">Developer</span></h4>
+			    <p>Positive vibes only is a chill discord server with only positive vibes. It will soon have a custom bot and website.</p><br>
+			    <a href="" class="joinlink">Join</a><br><br><br>
+			    <a href="http://www.lymiore.ml" class="websitelink">Website</a>
+			</div>
+            <div class="yee">
+               <img src="./images/yeehub.jpg" width="150px">
+                <h1>YeeHub</h1>
+                <h4>Reason for Partner: <span class="highlight">Owner/Developer</span></h4>
+                <p>YeeHub is a server full of nice people, good staff, anf the absolute dankest of memes.</p><br>
+                <a href="" class="joinlink">Join</a><br><br><br>
+			    <a href="http://www.yeehub.ml" class="websitelink">Website</a>
+
+            </div>
+		</section>
+	    <script>
+            //Changes the "seekeroftacos" header to multiple different outputs when the button is pressed.
+            function change(){
+                let outputs = ["seekeroftacos", "seekeroftacos - Web Developer", "seekeroftacos - Discord Bot Developer", "seekeroftacos - CSS", "seekeroftacos - HTML", "seekeroftacos - JS"];
+                
+                let realoutput = Math.floor((Math.random() * outputs.length));
+                
+                document.getElementById("change").innerHTML = outputs[realoutput];
+            }
+            //When hovered over, the button value is changed to "Click Me"
+            function changeit(){
+                document.getElementById("click").innerHTML = "Click Me";
+                
+                document.getElementById("tweetimg").src = "./images/twitter.png";
+                
+                document.getElementById("gitimg").src = "./images/githubcol.png";
+                
+                document.getElementById("gitimg").style.paddingBottom = "20px";
+                
+                document.getElementById("tweetimg").style.paddingRight = "20px";
+            }
+            //When the mouse leaves the box, the button returns to a blank value
+            function changeitback(){
+                document.getElementById("click").innerHTML = "";
+                
+                document.getElementById("tweetimg").src = "./images/twittercirc.png";
+                
+                document.getElementById("gitimg").src = "./images/github.png";
+            }
+            //When you hover over the github logo, it will switch to a colored version
+            function gitimg(){
+                document.getElementById("gitimg").src = "./images/githubcol.png";
+            }
+            //When the mouse leaves the github logo, it will change back to the full black version
+            function gitimgback(){
+                document.getElementById("gitimg").src = "./images/github.png";
+            }
+            //When you hover over the twitter logo, it will switch to a regular version
+            function twitterimg(){
+                document.getElementById("tweetimg").src = "./images/twitter.png";
+            }
+            //When the mouse leaves the twitter logo, it will change back to the circle version
+            function twitterimgback(){
+                document.getElementById("tweetimg").src = "./images/twittercirc.png";
+            }
+            
+            
+            
+            
+            //HOME BUTTON HOVER
+            function home(){
+                document.getElementById("homebutton").innerHTML = "Home";
+            }
+            
+            function homeclear(){
+                document.getElementById("homebutton").innerHTML = "";
+            }
+            
+            
+            
+            //CONTACT BUTTON HOVER
+            function contact(){
+                document.getElementById("contactbutton").innerHTML = "Contact";
+            }
+            
+            function contactclear(){
+                document.getElementById("contactbutton").innerHTML = "";
+            }
+		    
+	//PARTNER BUTTON HOVER
+		    function partner(){
+			document.getElementById("partnerbutton").innerHTML = "Partners";    
+		    }
+		    
+		    function partnerclear(){
+			document.getElementById("partnerbutton").innerHTML = "";    
+		    }
+            
+            //SHODAN LOGO HOVER
+            function red(){
+                document.getElementById("shodanpic").src = "./images/shodanred.jpg";
+                
+                document.getElementById("shodantext").style.color = "red";
+            }
+            
+            function orig(){
+                document.getElementById("shodanpic").src = "./images/shodan.png";
+                
+                document.getElementById("shodantext").style.color = "azure";
+            }
+        </script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
