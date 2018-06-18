@@ -64,6 +64,19 @@ header ul li {
     height: 50px;
 }
 
+.partners {
+    width: 100%;
+    margin: auto;
+}
+
+.lovefinding  img {
+    border-radius: 50%;
+}
+
+.rayyicdev  img {
+    border-radius: 50%;
+}
+
 /*All programming language boxes*/
 #prolanghead {
     color: mintcream;
